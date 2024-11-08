@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="permit"
+            type="com.farid.residencepermit.model.Permit" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{permit.firstName + ` ` + permit.lastName}"
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="32dp" />
+
+        <TextView
+            android:id="@+id/permitNumberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"Permit Number: " + String.valueOf(permit.permitNumber)}'
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toBottomOf="@id/nameView"
+            app:layout_constraintStart_toStartOf="@id/nameView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/issueDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"Issue Date: " + permit.issueDate}'
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toBottomOf="@id/permitNumberView"
+            app:layout_constraintStart_toStartOf="@id/permitNumberView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/expirationDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"Expiration Date: " + permit.expirationDate}'
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toBottomOf="@id/issueDateView"
+            app:layout_constraintStart_toStartOf="@id/issueDateView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/residenceTypeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"Residence Type: " + permit.residenceType}'
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toBottomOf="@id/expirationDateView"
+            app:layout_constraintStart_toStartOf="@id/expirationDateView"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/countryOfOriginView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"Country of Origin: " + permit.countryOfOrigin}'
+            android:textColor="@color/text_color"
+            app:layout_constraintTop_toBottomOf="@id/residenceTypeView"
+            app:layout_constraintStart_toStartOf="@id/residenceTypeView"
+            android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+

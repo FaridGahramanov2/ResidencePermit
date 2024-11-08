@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">ResidencePermit</string>
+    <string-array name="first_names">
+        <item>Farid</item>
+        <item>Teymur</item>
+        <item>Jeyhun</item>
+        <item>Huseyin</item>
+        <item>Reshad</item>
+        <item>Maryam</item>
+        <item>Nuray</item>
+    </string-array>
+
+    <string-array name="last_names">
+        <item>Gahramanov</item>
+        <item>Mammadov</item>
+        <item>Javadov</item>
+        <item>Rasulzadeh</item>
+        <item>Musayev</item>
+        <item>Nabizade</item>
+        <item>Mammadova</item>
+    </string-array>
+
+    <string-array name="permit_numbers">
+        <item>99012345678</item>
+        <item>99012456789</item>
+        <item>99012234567</item>
+        <item>99012134567</item>
+        <item>99012567890</item>
+        <item>99013345678</item>
+        <item>99013586743</item>
+    </string-array>
+
+    <string-array name="issue_dates">
+        <item>10/15/2022</item>
+        <item>7/25/2021</item>
+        <item>4/11/2019</item>
+        <item>11/15/2023</item>
+        <item>12/03/2024</item>
+        <item>2/11/2019</item>
+        <item>1/11/2020</item>
+    </string-array>
+
+    <string-array name="expiration_dates">
+        <item>3/12/2030</item>
+        <item>4/26/2025</item>
+        <item>10/5/2024</item>
+        <item>5/01/2025</item>
+        <item>7/05/2026</item>
+        <item>8/21/2032</item>
+        <item>11/30/2029</item>
+    </string-array>
+
+    <string-array name="residence_types">
+        <item>active</item>
+        <item>active</item>
+        <item>expired</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+        <item>active</item>
+    </string-array>
+
+    <string-array name="countries_of_origin">
+        <item>Turkey</item>
+        <item>Turkey</item>
+        <item>Turkey</item>
+        <item>Turkey</item>
+        <item>Turkey</item>
+        <item>Turkey</item>
+        <item>Turkey</item>
+    </string-array>
+
+</resources>
+
+
